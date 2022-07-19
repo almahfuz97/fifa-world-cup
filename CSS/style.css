@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1401px;
+    margin: 0 auto;
+}
 
 /* ---------------------------
     Banner Section
@@ -29,6 +33,7 @@
     width: 100%;
     padding: 0;
     margin-bottom: -4px;
+    margin-top: 10px;
 
 }
 
@@ -40,12 +45,12 @@
 
 .banner-info h1 {
     font-family: 'Poppins', sans-serif;
+    font-size: 70px;
     font-style: normal;
     font-weight: 700;
     line-height: 80px;
     color: #FFFFFF;
     width: 100%;
-    font-size: 70px;
     margin-bottom: 6%;
 }
 
@@ -69,13 +74,15 @@
     font-family: 'HelveticaNeue';
     font-style: normal;
     font-weight: 400;
+    font-size: 20px;
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
 }
 
-/* Media Query Mobile Phones */
-
+/*-------------------------------------
+ Media Query Mobile Phones px=up to 767.98
+ -------------------------------------------*/
 @media screen and (max-width: 767.98px) {
     .banner-section {
         flex-direction: column;
@@ -133,9 +140,105 @@
         background: #DD0000;
         border-radius: 5px;
         padding: 8px 12px;
-        line-height: 40px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
 
     }
+}
+
+/*-------------------------------------------
+      media query for Tablets pc=768 to 991
+ --------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
 
 
+    .banner-info h1 {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 48px;
+        color: #FFFFFF;
+        margin-bottom: 5%;
+    }
+
+    .banner-info p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 5%;
+        text-overflow: ellipsis;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        height: 48px;
+    }
+
+    .half-width img {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .banner-info a {
+        text-decoration: none;
+        display: inline-block;
+        background: #DD0000;
+        border-radius: 5px;
+        padding: 12px;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+
+    }
+}
+
+/*-------------------------------------------
+      media query for laptops/desktop pc=992 to 1199.98
+ --------------------------------------------*/
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+
+
+    .banner-info h1 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
+        color: #FFFFFF;
+        margin-bottom: 5%;
+    }
+
+    .banner-info p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 5%;
+        text-overflow: ellipsis;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        height: 48px;
+    }
+}
+
+/*-------------------------------------------
+      media query for large laptops/desktop pc=1200 to 1399.98
+ --------------------------------------------*/
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+
+
+    .banner-info h1 {
+        font-size: 55px;
+        font-weight: 700;
+        line-height: 65px;
+        color: #FFFFFF;
+        margin-bottom: 5%;
+    }
+
+    .banner-info p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 5%;
+        text-overflow: ellipsis;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        height: 48px;
+    }
 }
