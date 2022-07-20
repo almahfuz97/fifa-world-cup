@@ -1,0 +1,24 @@
+.group-card,
+.blog-card,
+.match-card {
+    transition: 0.5s;
+
+}
+
+.group-card:hover,
+.blog-card:hover,
+.match-card:hover {
+    transform: scale(1.05);
+}
+
+.options-div ul li {
+    transition: 0.5s;
+}
+
+.options-div ul li:hover {
+    transform: scale(1.05);
+}
+
+.not-selected:hover {
+    background-color: #b9b9b9;
+}
