@@ -247,6 +247,10 @@ Start: blog-card */
     width: 100%;
 }
 
+.line-break {
+    display: none;
+}
+
 .start-time {
     font-family: 'Inter';
     font-style: normal;
@@ -727,6 +731,12 @@ footer {
         overflow: hidden;
         height: 48px;
     }
+
+    .line-break {
+        display: inline;
+    }
+
+
 }
 
 
@@ -753,5 +763,9 @@ footer {
         /* white-space: nowrap; */
         overflow: hidden;
         height: 48px;
+    }
+
+    .match-info h3 {
+        font-size: 14px;
     }
 }
