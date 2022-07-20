@@ -181,7 +181,7 @@ options and card sections
 
 
 
-/* grid blog sections 
+/* grid all-groups sections 
 -------------------------*/
 .card-grid-container {
     display: grid;
@@ -193,20 +193,12 @@ options and card sections
 
 }
 
+
 /*-------------------------- 
-Start: blog-card */
-/* .match-card {
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(194, 188, 188);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    padding: 21% 12%;
+    Start: blog-card */
 
-} */
 
-.group-flex {
+.group-grid {
     width: 100%;
     display: grid;
     grid-template-columns: 10% 20% 70%;
@@ -217,17 +209,6 @@ Start: blog-card */
     margin: 5% 0%;
     column-gap: 10px;
 }
-
-/* .group-flex {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: rgb(238, 238, 229);
-    padding: 5% 5%;
-    border-radius: 10px;
-    margin: 5% 0%;
-} */
 
 .group-card {
     border-radius: 10px;
@@ -245,6 +226,10 @@ Start: blog-card */
     width: 100%;
 }
 
+.group-name p {
+    width: 100%;
+}
+
 .group-flex p {
     width: 100%;
     font-size: 0.8em;
@@ -254,7 +239,7 @@ Start: blog-card */
     width: 100%;
 }
 
-.group-flex h3 {
+.group-grid h3 {
     width: 100%;
     font-family: 'Inter', sans-serif;
     font-size: 12px;
@@ -263,35 +248,6 @@ Start: blog-card */
     font-weight: bold;
 
 }
-
-
-
-
-.match-info h3 {
-    font-family: 'Poppins';
-    font-style: bold;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    color: #161616;
-    margin-bottom: 5%;
-    width: 100%;
-}
-
-.line-break {
-    display: none;
-}
-
-.start-time {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    text-align: center;
-    color: #4D4D4D;
-}
-
 
 /* -------------------------- */
 
@@ -322,7 +278,7 @@ Start: blog-card */
     display: none;
 }
 
-/* End of Blog Card design
+/* End of Groups Card design
 -------------------------------*/
 
 
@@ -580,8 +536,21 @@ footer {
 
     }
 
-    .match-card {
+    .group-card {
         margin-bottom: 5%;
+    }
+
+    .group-grid {
+        gap: 1em;
+        grid-template-columns: 10% 10% 80%;
+    }
+
+    .group-grid h3 {
+        font-size: 18px;
+    }
+
+    .group-grid p {
+        font-size: 1em;
     }
 
     /* changing grid to one column */
@@ -680,6 +649,7 @@ footer {
 
     .options-div ul li {
         width: 33.3%;
+        margin-left: 22px;
 
     }
 
@@ -692,9 +662,9 @@ footer {
     .selected a {
         display: inline-block;
         text-decoration: none;
-        font-family: 'Poppins';
+        font-family: 'Inter';
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
         line-height: 30px;
         color: #FFFFFF;
@@ -712,6 +682,20 @@ footer {
         gap: 1em;
         padding: 0 0px;
     }
+
+    .group-grid {
+        gap: 1em;
+        grid-template-columns: 10% 10% 80%;
+    }
+
+    .group-grid h3 {
+        font-size: 18px;
+    }
+
+    .group-grid p {
+        font-size: 1em;
+    }
+
 
     /* removing last card from webpage */
     .last-card {
