@@ -198,16 +198,48 @@ options and card sections
     Start: blog-card */
 
 
-.group-grid {
+.group-flex {
     width: 100%;
-    display: grid;
-    grid-template-columns: 10% 20% 70%;
+    display: flex;
     align-items: center;
     background-color: rgb(238, 238, 229);
     padding: 5% 5%;
     border-radius: 10px;
     margin: 5% 0%;
-    column-gap: 10px;
+}
+
+.team-name1 {
+    width: 5%;
+    margin-right: 10%;
+
+}
+
+.team-name2 {
+    width: 20%;
+    margin-right: 3%;
+
+}
+
+.team-name3 {
+    width: 75%;
+}
+
+.team-name1 p {
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.team-name2 img {
+    width: 100%;
+}
+
+.team-name3 h3 {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+
 }
 
 .group-card {
@@ -230,24 +262,6 @@ options and card sections
     width: 100%;
 }
 
-.group-flex p {
-    width: 100%;
-    font-size: 0.8em;
-}
-
-.group-flex img {
-    width: 100%;
-}
-
-.group-grid h3 {
-    width: 100%;
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-weight: bold;
-
-}
 
 /* -------------------------- */
 
@@ -540,17 +554,9 @@ footer {
         margin-bottom: 5%;
     }
 
-    .group-grid {
-        gap: 1em;
-        grid-template-columns: 10% 10% 80%;
-    }
-
-    .group-grid h3 {
-        font-size: 18px;
-    }
-
-    .group-grid p {
-        font-size: 1em;
+    .team-name3 h3 {
+        font-size: 1.2em;
+        margin-left: 5%;
     }
 
     /* changing grid to one column */
@@ -683,19 +689,10 @@ footer {
         padding: 0 0px;
     }
 
-    .group-grid {
-        gap: 1em;
-        grid-template-columns: 10% 10% 80%;
+    .team-name3 h3 {
+        font-size: 1.2em;
+        margin-left: 5%;
     }
-
-    .group-grid h3 {
-        font-size: 18px;
-    }
-
-    .group-grid p {
-        font-size: 1em;
-    }
-
 
     /* removing last card from webpage */
     .last-card {
@@ -784,9 +781,5 @@ footer {
         /* white-space: nowrap; */
         overflow: hidden;
         height: 48px;
-    }
-
-    .match-info h3 {
-        font-size: 14px;
     }
 }
