@@ -68,17 +68,42 @@ body {
 .banner-info a {
     text-decoration: none;
     display: inline-block;
-    background: #DD0000;
+    background: #840101;
     border-radius: 5px;
     padding: 12px;
     font-family: 'HelveticaNeue';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
+    animation: button-animation 2.5s ease-in-out infinite alternate;
+
 }
+
+/* animation to banner button */
+@keyframes button-animation {
+    25% {
+        background: #840101;
+    }
+
+    50% {
+
+        background: #5b0101;
+        transform: scale(1.1);
+    }
+
+    75% {
+        background: #820101;
+    }
+
+    100% {
+        background: #840101;
+    }
+
+}
+
 
 /* End Of banner SEction */
 
@@ -112,20 +137,21 @@ options and card sections
 
 .not-selected {
     background-color: #FFFFFF;
-    padding: 17px 0;
+    padding: 0px 0;
     width: 252px;
     border-radius: 10px;
 }
 
 .selected {
     background-color: #DD0000;
-    padding: 17px 0;
+    padding: 0px 0;
     width: 252px;
     border-radius: 10px;
 
 }
 
 .not-selected a {
+    display: flex;
     text-decoration: none;
     font-family: 'Inter';
     font-style: normal;
@@ -133,11 +159,15 @@ options and card sections
     font-size: 20px;
     line-height: 30px;
     color: #161616;
+    justify-content: center;
+    padding: 17px 0;
+
+
 
 }
 
 .selected a {
-    display: inline-block;
+    display: flex;
     text-decoration: none;
     font-family: 'Poppins';
     font-style: normal;
@@ -146,6 +176,9 @@ options and card sections
     line-height: 30px;
     color: #FFFFFF;
     text-align: center;
+    justify-content: center;
+    padding: 17px 0;
+
 }
 
 
@@ -468,14 +501,6 @@ footer {
 
     }
 
-    .not-selected {
-        background-color: #FFFFFF;
-        border: 1px solid #E8E8E8;
-        padding: 9px 0;
-        width: 210px;
-        border-radius: 10px;
-    }
-
     .all-group {
         background-color: #FFFFFF;
         border: 1px solid #E8E8E8;
@@ -484,15 +509,62 @@ footer {
         border-radius: 10px;
     }
 
+    .options-div ul li {
+        margin-bottom: 5%;
+    }
+
+    .not-selected {
+        border: 1px solid #E8E8E8;
+
+    }
+
+    .not-selected {
+        background-color: #FFFFFF;
+        padding: 0px 0;
+        width: 100%;
+        border-radius: 10px;
+    }
 
     .selected {
         background-color: #DD0000;
-        padding: 11px 0;
-        width: 160px;
+        padding: 0px 0;
+        width: 100%;
         border-radius: 10px;
-        text-align: center;
 
     }
+
+    .not-selected a {
+        display: flex;
+        text-decoration: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #161616;
+        justify-content: center;
+        padding: 11px 0;
+
+
+
+    }
+
+    .selected a {
+        display: flex;
+        text-decoration: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        text-align: center;
+        justify-content: center;
+        padding: 11px 0;
+
+    }
+
+
 
     .blog-card {
         margin-bottom: 5%;
