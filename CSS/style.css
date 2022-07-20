@@ -200,7 +200,7 @@ Start: blog-card */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 27px;
     color: #161616;
     margin-bottom: 15px;
@@ -294,7 +294,7 @@ footer {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 2em;
     line-height: 60px;
     padding-top: 10px;
     /* identical to box height */
@@ -327,21 +327,23 @@ footer {
     list-style-type: none;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
 }
 
 .footer-lists-div ul li {
     padding: 20px;
     padding-top: 0;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-    font-feature-settings: 'liga' off;
+}
 
+.footer-lists-div ul li a {
+    text-decoration: none;
+    font-family: 'Poppins';
     color: #B9B9B9;
+    font-size: 1em;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
 }
 
 .social-icon {
@@ -352,10 +354,13 @@ footer {
 }
 
 .social-icon a {
-    margin: 2%;
+    margin: 2% 5%;
     color: #efe9e9;
-    font-size: 1.5em;
+    font-size: 2em;
 }
+
+/* END of Footer
+------------------------------------ */
 
 
 /*-------------------------------------
@@ -497,6 +502,12 @@ footer {
     }
 
 
+    /* ------------------------
+    meadia query for FOOTER 
+    --------------------------*/
+    .footer-lists-div ul {
+        flex-direction: column;
+    }
 }
 
 /* ------------------------------------------------ */
@@ -616,6 +627,11 @@ footer {
 
     }
 
+    /* media query for footer
+    --------------------------- */
+    .footer-lists-div ul {
+        flex-wrap: wrap;
+    }
 }
 
 
