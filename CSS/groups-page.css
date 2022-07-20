@@ -186,7 +186,7 @@ options and card sections
 .card-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3%;
+    gap: 1em;
     width: 100%;
     margin-bottom: 0%;
     padding-bottom: 10%;
@@ -195,7 +195,7 @@ options and card sections
 
 /*-------------------------- 
 Start: blog-card */
-.match-card {
+/* .match-card {
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(194, 188, 188);
     display: flex;
@@ -204,36 +204,68 @@ Start: blog-card */
     flex-direction: column;
     padding: 21% 12%;
 
-}
+} */
 
-.flag-germany-div {
-    margin-right: 5%;
-}
-
-.flag-germany-div img {
+.group-flex {
     width: 100%;
+    display: grid;
+    grid-template-columns: 10% 20% 70%;
+    align-items: center;
+    background-color: rgb(238, 238, 229);
+    padding: 5% 5%;
+    border-radius: 10px;
+    margin: 5% 0%;
+    column-gap: 10px;
 }
 
-.flag-france-div {
-    margin-left: 5%;
-}
-
-.flag-france-div img {
+/* .group-flex {
     width: 100%;
-}
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(238, 238, 229);
+    padding: 5% 5%;
+    border-radius: 10px;
+    margin: 5% 0%;
+} */
 
-.flag-div {
+.group-card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(194, 188, 188);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
+    padding: 5% 5%;
+
 }
 
-
-.match-info {
+.group-name {
     text-align: center;
     width: 100%;
-    margin-top: 5%;
 }
+
+.group-flex p {
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.group-flex img {
+    width: 100%;
+}
+
+.group-flex h3 {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+
+}
+
+
+
 
 .match-info h3 {
     font-family: 'Poppins';

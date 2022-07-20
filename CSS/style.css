@@ -7,6 +7,7 @@
 body {
     max-width: 1401px;
     margin: 0 auto;
+    padding: 0;
 }
 
 /* ---------------------------
@@ -315,6 +316,7 @@ Start: blog-card */
 footer {
     background-color: #161616;
     padding: 9% 2%;
+    width: 100%;
     color: white;
 }
 
@@ -683,6 +685,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
         padding: 0 0px;
+    }
+
+    .last-card {
+        display: none;
     }
 
     /* view-all anchor tag showing */
