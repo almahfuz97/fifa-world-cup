@@ -1,0 +1,180 @@
+/* ---------------------------
+    Banner Section
+   --------------------------- */
+.banner-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    /* background-color: #161616; */
+    background: linear-gradient(rgb(43, 1, 1), rgb(197, 46, 46));
+    border-radius: 25px;
+}
+
+.half-width {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.half-width img {
+    width: 100%;
+    padding: 0;
+    margin-bottom: -4px;
+    margin-top: 10px;
+
+}
+
+.banner-info {
+    margin: 8%;
+    margin-right: 0;
+    margin-right: 24px;
+}
+
+.banner-info h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    color: #FFFFFF;
+    width: 100%;
+    margin-bottom: 6%;
+}
+
+.banner-info p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    color: #FFFFFF;
+    width: 100%;
+    margin-bottom: 9%;
+}
+
+.banner-info a {
+    text-decoration: none;
+    display: inline-block;
+    background: #840101;
+    border-radius: 5px;
+    padding: 12px;
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    animation: button-animation 2s ease-in-out infinite alternate;
+    letter-spacing: 1.5px;
+
+}
+
+/* animation to banner button */
+@keyframes button-animation {
+    0% {
+        background: #5d0202;
+    }
+
+    100% {
+        background: #840101;
+        transform: scale(1.07);
+
+    }
+
+}
+
+/* End Of banner SEction */
+
+
+/* start: Footer
+----------------------- */
+footer {
+    background-color: #161616;
+    padding: 9% 2%;
+    width: 100%;
+    color: white;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-name {
+    margin-bottom: 4%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 60px;
+    padding-top: 10px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.horizontal-line {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 4%;
+}
+
+.horizontal-line hr {
+    color: gray;
+    background-color: rgb(46, 45, 45);
+    height: 1px;
+    border-width: 0;
+}
+
+.footer-lists-div {
+    width: 100%;
+
+}
+
+.footer-lists-div ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.footer-lists-div ul li {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.footer-lists-div ul li a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: #B9B9B9;
+    font-size: 1em;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.social-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon a {
+    margin: 2% 5%;
+    color: #efe9e9;
+    font-size: 2em;
+}
+
+/* END of Footer
+------------------------------------ */
